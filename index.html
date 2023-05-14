@@ -87,17 +87,17 @@
                             <!--====== Main Menu ======-->
                             <nav class="main-menu">
                                 <ul>
-                                    <li class="menu-item has-children"><a href="index">Hjem</a>
+                                    <li class="menu-item has-children"><a href="index">HJEM</a>
                                 
                                     </li>
-                                    <li class="menu-item has-children"><a href="tour">Turer</a>
+                                   <!-- <li class="menu-item has-children"><a href="tour">Turer</a>
                                       
                                     </li>
-                                    <li class="menu-item has-children"><a href="destination">Destinasjoner</a>
+                                    <li class="menu-item has-children"><a href="destination">Destinasjoner</a>-->
                                    
                                     </li>
-                                    <li><a href="about">Om Oss</a></li>
-                                    <li><a href="contact">Kontakt Oss</a></li>
+                                    <li><a href="about">OM OSS</a></li>
+                                    <li><a href="contact">KONTAKT OSS</a></li>
                                     <!--<li class="menu-item has-children"><a href="index.html#">Sider</a>
                                         <ul class="sub-menu">
                                             
@@ -139,6 +139,8 @@
                 </div>
             </div>
         </header><!--====== End Header ======-->
+        <script src="//widget.simplybook.it/v2/widget/widget.js"></script>
+<script>var widget = new SimplybookWidget({"widget_type":"iframe","url":"https:\/\/vaganvikngcampung.simplybook.it","theme":"dainty","theme_settings":{"timeline_show_end_time":"1","timeline_hide_unavailable":"1","hide_past_days":"0","sb_base_color":"#1dc495","secondary_color":"#e4ebf5","sb_text_color":"#a1a1a1","display_item_mode":"block","body_bg_color":"#ffffff","sb_background_image":"","sb_review_image":"","dark_font_color":"#293b36","light_font_color":"#ffffff","sb_company_label_color":"#ffffff","sb_cancellation_color":"#ff7a93","hide_img_mode":"0"},"timeline":"modern","datepicker":"top_calendar","is_rtl":false,"app_config":{"clear_session":0,"allow_switch_to_ada":0,"predefined":[]}});</script>
        <!--====== Start Hero Section ======-->
        <section class="hero-section">
         <!--=== Hero Wrapper ===-->
@@ -201,7 +203,9 @@
                 </div>
             </div>
         </div>
-    </section><!--====== End Hero Section ======-->
+    </section>
+    <script src="//widget.simplybook.it/v2/widget/widget.js"></script>
+    <!--====== End Hero Section ======-->
        <!-- <section class="booking-form-section">
             <div class="container-fluid">
                 <div class="booking-form-wrapper">
@@ -855,9 +859,39 @@
             </div>
         </footer><!--====== End Footer ======-->
 
-        <!-- Booking Bot-->
+        <!-- Booking Bot
         <script type="text/javascript">!function(t,e){t.artibotApi={l:[],t:[],on:function(){this.l.push(arguments)},trigger:function(){this.t.push(arguments)}};var a=!1,i=e.createElement("script");i.async=!0,i.type="text/javascript",i.src="https://app.artibot.ai/loader.js",e.getElementsByTagName("head").item(0).appendChild(i),i.onreadystatechange=i.onload=function(){if(!(a||this.readyState&&"loaded"!=this.readyState&&"complete"!=this.readyState)){new window.ArtiBot({i:"be4b7536-f655-4644-928b-71ed13e2415a"});a=!0}}}(window,document);</script>
+        -->
+        <!-- Messenger Chattillegg Code -->
+    <div id="fb-root"></div>
 
+    <!-- Your Chattillegg code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "104896085934613");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v16.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/nb_NO/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
         <!--End booking bot-->
 
         <!--====== Back To Top  ======-->
